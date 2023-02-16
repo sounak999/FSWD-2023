@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Pseudo Element</title>
+    <style>
+        .hello:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        input:hover {
+            font-size: 50px;
+            color: white;
+            background-color: black;
+        }
+
+        /* 
+        a:hover {
+            background-color: hotpink;
+        }
+
+        a:active {
+            background-color: royalblue;
+        }
+
+        a:visited {
+            color: green;
+        } */
+
+        /* a:first-child {
+            background-color: yellow;
+        } */
+
+        /* a:nth-child(odd) {
+            background-color: hotpink;
+        } */
+
+        a:nth-child(2n) {
+            background-color: hotpink;
+        }
+
+        /* .lorem::first-line {
+            background-color: yellow;
+        } */
+
+        /* .lorem::first-letter {
+            font-size: 20px;
+            font-weight: 900;
+        } */
+
+        .lorem::before {
+            content: "PW Skills";
+            color: deeppink;
+        }
+
+        .lorem::after {
+            content: "PW Skills";
+            color: darkgreen;
+        }
+
+        ::selection {
+            color: blue;
+            background-color: aquamarine;
+        }
+
+        ::marker {
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit delectus voluptatum neque? Nesciunt
+        quis repellat optio quae adipisci sapiente cumque velit, quidem quam, aspernatur numquam. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Eaque fugiat, sapiente expedita similique vitae, dicta fugit nesciunt illo
+        quaerat odio harum perferendis! Similique tempora architecto totam impedit. Totam at, ab repudiandae dolores
+        explicabo odio.</p>
+
+    <input type="text">
+
+    <nav>
+        <a href="https://www.google.com" target="_blank">Google</a>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.pinterest.com" target="_blank">Pinterest</a>
+        <a href="https://www.tinder.com" target="_blank">Tinder</a>
+    </nav>
+
+    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis corrupti amet ut, quasi non cupiditate. Fugit omnis quis, illum dolores quod, doloribus ab sed sit quaerat eius accusantium pariatur illo perspiciatis nemo dolor error alias hic et vel beatae eveniet. Hic, quis magni, adipisci alias facilis saepe sit et dolorum sunt harum odit. Officiis nemo nostrum amet mollitia explicabo facilis excepturi autem ut alias laborum! Sed iure iusto cum minima doloremque iste quidem nemo rem est distinctio aut magni, minus sapiente quisquam soluta aspernatur debitis pariatur repellendus porro? Hic placeat incidunt ipsam tempore numquam? Voluptatibus mollitia at est saepe ad?</p>
+
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+</body>
+
+</html>

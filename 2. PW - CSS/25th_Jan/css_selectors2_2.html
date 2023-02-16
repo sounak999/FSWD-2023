@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors 2 - Second</title>
+
+    <style>
+        *{
+            background-color: #8a8a8a;
+        }
+
+        /* Attribute Selector */
+
+        [target="_blank"] {
+            background-color: #abd396;
+        }
+
+        /* Looks for 'alt' attribute containing the word 'PW' */
+        /* [alt~="PW"] {
+            background-color: #e77eb3;
+        } */
+
+        /* Looks for 'alt' attribute equals the word 'PW Logo' */
+        [alt|="PW Logo"] {
+            background-color: #6257f5;
+        }
+
+        /* starts with */
+        /* [target^="_"] {
+            background-color: #f487f2;
+        } */
+
+        /* ends with */
+        [target$="nk"] {
+            background-color: #9951dd;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" target="_blank">Home</a> || 
+        <a href="#"><img src="../images/pwskills-logo.png" alt="PW Logo"></a> ||
+        <a href="#">Contact</a> ||
+        <a href="#" target="_blank">About Us</a> ||
+        <a href="#"><img src="../images/ineuron-logo.png" alt="Alter Logo"></a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #edf1fd;
+    display: flex;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+button {
+    background-color: #129b9b;
+    padding: 4px 10px;
+    cursor: pointer;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    width: fit-content;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #129b9b;
+    border: 1px solid #000000;
+}
+
+header {
+    padding: 15px 0;
+}
+
+/* header section */
+nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .logo {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: 500;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.search-field {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    padding: 4px 10px;
+    margin-right: 1vw;
+}
+
+/* main section */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+}
+
+.my-info,
+.my-dp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.my-dp {
+    align-items: center;
+}
+
+.my-info h1 span {
+    color: #129b9b;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.my-info p span {
+    color: #129b9b;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* footer section */
+footer {
+    display: flex;
+    font-weight: 500;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

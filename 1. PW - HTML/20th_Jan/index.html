@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmet</title>
+</head>
+<body>
+  <!-- Speedy HTML -->
+
+  <p class="hello"></p>
+  <!-- p.hello + <tab> -->
+
+   <p id="sounak"></p> 
+   <!-- p#sounak + <tab> -->
+
+  <p class="class1 class2"></p>
+  <p id="sks" class="demo"></p>
+  <p id="ankan"></p>
+  <!-- multiple classes or id
+    i. p.class1.class2 + <tab>
+    ii. p#sks.demo + <tab>
+    iii. p#sounak#ankan + <tab> (although you try multiple ids, html can allow only one id, 
+    that's why, only later part is considered)
+ -->
+
+  <img src="picture.jpg" alt="">
+ <!-- img[src="picture.jpg"] + <tab> -->
+  <p title="heading"></p>
+  <!-- p[title="heading"] + <tab> -->
+
+    <p>I am Sounak Saha</p>
+    <!-- p{I am Sounak Saha} + <tab> -->
+
+
+      <!-- Parent Child Relationship -->
+      <div>
+        <p>
+          <p></p>
+        </p>
+      </div>
+      <!-- div>p>p -->
+
+      <div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- div>ul>li*4 -->
+
+      <!-- Sibligs -->
+      <div>
+        <p></p>
+        <p></p>
+      </div>
+      <!-- div>p+p -->
+
+      <!-- Grouping all these -->
+
+      <div class="parent">
+        <p id="brother"></p>
+        <p title="sister"></p>
+      </div>
+      <!-- div.parent>p#brother+p[title="sister"] -->
+
+
+      <div>
+        <nav>
+          <li></li>
+          <li></li>
+          <li></li>
+          <img src="" alt="">
+        </nav>
+        <section></section>
+        <footer></footer>
+      </div>
+      <!-- div>(nav>li*3+img)+section+footer -->
+      
+</body>
+</html>

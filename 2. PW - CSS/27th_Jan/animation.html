@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: colorchange;
+            animation-duration: 8s;
+            animation-delay: 2s;
+            animation-iteration-count: 1;
+            /* animation-direction: alternate-reverse; */
+            animation-fill-mode: both;
+        }
+        
+        #ease {
+            animation-timing-function: ease;
+        }
+        #ease-in {
+            animation-timing-function: ease-in;
+        }
+        #ease-out {
+            animation-timing-function: ease-out;
+        }
+        #linear {
+            animation-timing-function: linear;
+        }
+
+        @keyframes colorchange {
+            /* from {background-color: blue;}
+            to {background-color: yellow;} */
+
+            0% {
+                background-color: blue;
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                background-color: yellow;
+                top: 0px;
+                left: 200px;
+            }
+
+            50% {
+                background-color: blueviolet;
+                top: 200px;
+                left: 200px;
+            }
+            
+            75% {
+                background-color: hotpink;
+                top: 200px;
+                left: 0px;
+            }
+
+            100% {
+                background-color: red;
+                top: 0px;
+                left: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="ease">ease</div>
+    <div id="ease-in">ease-in</div>
+    <div id="ease-out">ease-out</div>
+    <div id="linear">linear</div>
+    <p>Note: when animation ends, it gets back to the previous state</p>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f5ed;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+span, a:hover, button {
+    cursor: pointer;
+}
+
+a:hover {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 30px;
+    height: 12vh;
+}
+
+
+/* Navbar Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.fa-solid {
+    color: #05a442;
+}
+
+#logo-name {
+    color: #000;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+/* Navbar Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+    justify-content: start;
+    list-style: none;
+    width: 70vw;
+}
+
+.menu-items {
+    font-weight: 600;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Text Section */
+
+ad-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    letter-spacing: -1px;
+    font-size: 48px;
+    font-weight: 800;
+    word-spacing: -2px;
+}
+
+.ad-info p {
+    padding: 20px 0;
+}
+
+button {
+    background-color: #05a442;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #05a442;
+}
+
+
+/* Image Section */
+
+.ad-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30vw;
+}
+
+.upper-image, .lower-image {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.upper-image img {
+    border-radius: 20px;
+}
+
+.lower-image img {
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+

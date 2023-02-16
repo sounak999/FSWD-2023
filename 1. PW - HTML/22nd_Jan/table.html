@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <!-- Table -->
+    <table border cellpadding="10px" cellspacing="5px" bordercolor="blue">
+        <!-- we don't use these attributes much, we can design using CSS -->
+        <tr>
+            <th>Serial No.</th>
+            <th>Sub 1</th>
+            <th>Sub 2</th>
+            <th>Sub 3</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bengali</td>
+            <td>English</td>
+            <td rowspan="2">Math</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Physics</td>
+            <td>Chemistry</td>
+            <!-- <td>Math</td> -->
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td colspan="2">Biology</td>
+            <!-- <td>Biology</td> -->
+            <td>Economics</td>
+        </tr>
+    </table>
+
+    <!-- NB: Padding is from inside, Margin is from Outside -->
+</body>
+</html>

@@ -1,0 +1,29 @@
+.box {
+    height: 100px;
+    width: 100px;
+}
+
+.main {
+    border: 2px solid red;
+}
+
+.class1 {
+    background-color: red;
+    /* position: sticky;
+    top: 0; */
+}
+
+.class2 {
+    background-color: blue;
+    /* position: fixed;
+    bottom: 0;
+    right: 0;  */
+}
+
+.class3 {
+    background-color: yellow;
+    position: relative;
+    /* position: absolute; */
+    top: 20px;
+    left: 100px;
+}

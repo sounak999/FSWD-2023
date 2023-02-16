@@ -1,0 +1,74 @@
+/* Frame 1 */
+
+body {
+    background-color:#4cfac0;
+    text-align: center;
+}
+
+p {
+    display: none;
+}
+
+/* Frame 2 */
+
+@media screen and (max-width: 1440px) {
+    body {
+        background-color:#016c01;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+}
+
+/* Frame 3 */
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color:#d2691e;
+    }
+
+    .laptop {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+}
+
+/* Frame 4 */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color:#00ffff;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+}
+
+/* Frame 5 */
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color:#f02446
+    }
+
+    .smartphone {
+        display: block;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+}

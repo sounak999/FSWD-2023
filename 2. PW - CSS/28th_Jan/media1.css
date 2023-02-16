@@ -1,0 +1,72 @@
+body {
+    background-color: aquamarine;
+}
+
+div {
+    text-align: center;
+    font-size: x-large;
+}
+
+div::after {
+    content: 'Welcome to the Course (default)';
+}
+
+/* @media (min-width:400px) {
+    body {
+        background-color: blueviolet;
+    }
+
+    div::after {
+        content: 'Small screen';
+    }
+}
+
+@media (min-width:700px) {
+    body {
+        background-color: red;
+    }
+
+    div::after {
+        content: 'Woah, we are responsive';
+    }
+}
+
+@media (min-width:1000px) {
+    body {
+        background-color: greenyellow;
+    }
+
+    div::after {
+        content: 'Responsive for beyond 1000px';
+    }
+} */
+
+@media (max-width: 400px) {
+    body {
+        background-color: brown;
+    }
+
+    div::after {
+        content: 'smallest screen';
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    body {
+        background-color: hotpink;
+    }
+
+    div::after {
+        content: 'Medium screen';
+    }
+}
+
+@media (768px <= width <= 1000px) {
+    body {
+        background-color: chartreuse;
+    }
+
+    div::after {
+        content: 'medium large screen';
+    }
+}

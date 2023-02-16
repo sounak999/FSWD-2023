@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors 2 - First</title>
+
+    <style>
+        /* Descendent Selector */
+        /* main p {
+            background-color: #04c004;
+        } */
+
+        /* Child Selector */
+        /* main > p {
+            background-color: #4652f1;
+        } */
+
+        /* Adjacent Sibling Selector */
+        /* h2 + p {
+            background-color: #ecec7b;
+        } */
+
+        /* General Sibling Selector */
+        h2 ~ p {
+            background-color: #dc5cdc;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>
+        <span id="coloredText1">PW</span> IS THE MOST <span id="coloredText2">RELIABLE, VALUABLE, AFFORDABLE </span>LEARNING PATH.
+    </h2>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, debitis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, accusamus in?</p>
+
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo perspiciatis nulla dignissimos accusamus corporis dicta veniam perferendis, exercitationem, aspernatur enim beatae labore illo deleniti laboriosam necessitatibus ad qui adipisci obcaecati, itaque quibusdam. Adipisci, facilis!</p>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam est ut, et quo expedita Fuga</p>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia sint doloribus praesentium, optio in, nam ab perspiciatis officiis velit expedita consequuntur? Error recusandae commodi magni rem unde consequuntur officia voluptas!</p>
+    </main>
+</body>
+</html>
