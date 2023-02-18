@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 125px 30%;
+    text-align: center;
+}
+
+.about-section h1 {
+    color: #20bc7e;
+    margin: 12px 0;
+}
+
+.about-section p {
+    padding: 5px 20px 20px;
+    font-weight: 500;
+}
+
+.box {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px black;
+    height: 70px;
+    width: 130px;
+    margin: 10px 15px;
+}
+
+.highlight {
+    font-weight: 700;
+    font-size: 20px;
+    color: #20bc7e;
+    margin-top: 6px;
+}
+
+.box p {
+    font-weight: 600;
+    margin-top: 3px;
+}
