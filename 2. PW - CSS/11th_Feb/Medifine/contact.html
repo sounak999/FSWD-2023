@@ -8,10 +8,12 @@
     <title>Medifine</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/contact.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -27,23 +29,28 @@
 
     </header>
     <main>
-        <section class="contact-section">
-            <div class="form-box">
-                <h1>Contact Form</h1>
-                <form action="">
+        <div class="form-box">
+            <h1>Contact Form</h1>
+            <form action="">
+                <div class="form-field">
                     <label for="your-name">Name</label>
                     <input type="text" name="name" id="your-name" placeholder="Enter your name">
+                </div>
 
+                <div class="form-field">
                     <label for="your-email">Email</label>
                     <input type="email" name="email" id="your-email" placeholder="Enter your email">
+                </div>
 
-                    <label for=""></label>
-                    <textarea name="message" id="your-msg" cols="30" rows="10" placeholder="Enter your messages"></textarea>
+                <div class="form-field">
+                    <label for="your-msg">Message</label>
+                    <textarea name="message" id="your-msg" cols="30" rows="6"
+                        placeholder="Enter your messages"></textarea>
+                </div>
 
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </main>
 </body>
 

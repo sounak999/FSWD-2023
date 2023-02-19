@@ -47,13 +47,13 @@ img[alt="top-img"] {
 }
 
 img[alt="bottom-img"] {
-    position: relative;
+    position: absolute;
     left: 53%;
     bottom: 68px;
 }
 
 img[alt="mouse-img"] {
-    position: relative;
+    position: absolute;
     left: 55%;
     bottom: 20px;
 }
