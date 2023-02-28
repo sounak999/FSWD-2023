@@ -22,6 +22,11 @@
     <h2 id="hId">Hi</h2>
     <h2 class="hCls">He he</h2>
 
+    <!-- Query Selector -->
+    <h3>Heading 3</h3>
+    <h3 class="demo-class">H3 with Class</h3>
+    <h3 id="demo-id">H3 with ID</h3>
+
     <script>
         // id
         let pId = document.getElementById("pid");
@@ -39,6 +44,17 @@
         let hTag = document.getElementsByTagName("h2");
         console.log(hTag);
         hTag[2].innerText = "Sounak";
+
+        // Query Selector
+        let qs = document.querySelector("h3");
+        qs.style.backgroundColor = "red";
+        console.log(qs);
+        qs = document.querySelector(".demo-class");
+        qs.className = "Sounak";
+        // qs.classList = "Hi, Ankan, baby";
+        console.log(qs);
+        qs = document.querySelector("#demo-id");
+        qs.setAttribute("title", "JS yeh hai ji!");
     </script>
 </body>
 </html>
