@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- id -->
-    <p class="pid">Namaste</p>
+    <p id="pid"><span>Namaste</span> Coders</p>
 
     <!-- class -->
     <ul>
@@ -17,9 +17,28 @@
         <li class="tech">Three</li>
     </ul>
 
+    <!-- tag -->
+    <h2>Hello</h2>
+    <h2 id="hId">Hi</h2>
+    <h2 class="hCls">He he</h2>
+
     <script>
-        let pId = document.getElementById(pid);
+        // id
+        let pId = document.getElementById("pid");
         console.log(pId);
+        console.log(`innerText --> ${pId.innerText}`);
+        console.log(`innerHTML --> ${pId.innerHTML}`);
+
+        // class
+        let techClass = document.getElementsByClassName("tech");
+        console.log(techClass);
+        console.log(techClass[1].innerText);
+        techClass[2].innerText = "Sounak";
+
+        // tag
+        let hTag = document.getElementsByTagName("h2");
+        console.log(hTag);
+        hTag[2].innerText = "Sounak";
     </script>
 </body>
 </html>
