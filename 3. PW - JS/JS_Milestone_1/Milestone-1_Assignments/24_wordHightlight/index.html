@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Words</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, iusto debitis vel modi, sunt quos, architecto
+        porro repudiandae et laudantium ratione quas commodi obcaecati doloremque! Quo beatae eos perferendis libero
+        soluta architecto cum veritatis, molestiae ex, facere vel nam! Magnam veniam, consequatur porro dignissimos
+        itaque, ad harum corrupti, facere blanditiis incidunt aut. Ducimus iste ex optio in vitae vel tempore ratione
+        perspiciatis molestiae, reprehenderit necessitatibus quo doloribus quam magnam repellendus nisi iusto quidem
+        rerum beatae similique? Tempora sint ducimus voluptatem, voluptate cum molestias? Quaerat nostrum error iusto
+        nisi culpa qui quia omnis, animi maiores voluptas. Atque, culpa? Iste, eius dicta!</p>
+
+    <script>
+        const para = document.querySelector('p')
+        const words = para.innerText.split(' ')
+        // console.log(words);
+
+        words.map(word => {
+            if (word.length > 8) {
+                const span = document.createElement('span')
+                span.classList.add('highlight')
+                span.innerText = word
+                // console.log(span);
+                para.innerHTML = para.innerHTML.replace(word, span.outerHTML)
+
+            }
+        })
+
+        // console.log(para);
+    </script>
+</body>
+
+</html>
