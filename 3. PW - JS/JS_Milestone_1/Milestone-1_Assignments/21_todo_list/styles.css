@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.add-task {
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    margin-top: 5vh;
+    width: 80vw;
+}
+
+.add-task input,
+.add-task button {
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.add-task input {
+    padding: 2px 8px;
+}
+
+.all-tasks {
+    list-style: none;
+}
+
+.task {
+    border: 1px solid #414141;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 6px 12px;
+    width: 70vw;
+}
+
+
+.btns {
+    width: 18%;
+}
+
+.don-btn,
+.dlt-btn {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.dlt-btn {
+    background-color: red;
+}
+
+.don-btn {
+    background-color: green;
+}
