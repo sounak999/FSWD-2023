@@ -33,22 +33,22 @@
         document.body.addEventListener('keydown', (e) => {
             switch (e.key) {
                 case 'ArrowUp':
-                    yPosition--
+                    yPosition -= 5
                     image.style.top = yPosition + 'px'                
                     break;
 
                 case 'ArrowDown':
-                    yPosition++
+                    yPosition += 5
                     image.style.top = yPosition + 'px'                
                     break;
 
                 case 'ArrowRight':
-                    xPosition++
+                    xPosition += 5
                     image.style.left = xPosition + 'px'                
                     break;
                     
                 case 'ArrowLeft':
-                    xPosition--
+                    xPosition -= 5
                     image.style.left = xPosition + 'px'                
                     break;
 
