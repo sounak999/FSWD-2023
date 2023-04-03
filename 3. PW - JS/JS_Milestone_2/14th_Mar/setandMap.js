@@ -13,7 +13,7 @@ let arraySet = new Set(myArray)
 // console.log(arraySet);
 // console.log(arraySet.has(9));
 // console.log(arraySet.has(4));
-// console.log(arraySet.clear());
+// arraySet.clear();
 // console.log(arraySet);
 
 
@@ -31,8 +31,6 @@ let arr = [
     [5, "Vinay"],
     [6, "Prabir"],
     [4, "Hitesh"],
-
-
   ];
 
 //   el =  [1, "Mithun"]
