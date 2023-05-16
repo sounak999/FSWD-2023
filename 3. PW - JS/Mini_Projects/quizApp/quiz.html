@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz App</title>
+</head>
+
+<body>
+    <div id="quiz">
+        <div class='question'>
+            1. What is the capital of france?
+        </div>
+        <div class='answers'>
+        <label>
+            <input type="radio" name="question0" value="a">a: Paris
+        </label>
+        <label>
+            <input type="radio" name="question0" value="b">b: London
+        </label>
+        <label>
+            <input type="radio" name="question0" value="c">c: New Delhi
+        </label>
+        <label>
+            <input type="radio" name="question0" value="d">d: Ajax
+        </label>
+        
+        </div>
+    </div>
+    <button id="submit">Submit</button>
+    <div id="result"></div>
+
+    <script>
+        const quizContainer = document.getElementById('quiz')
+        const submitButton = document.getElementById('submit')
+        const resultContainer = document.getElementById('result')
+        const myQuestions = [
+            {
+                question: "What is the capital of france?",
+                answers: {
+                    a: "Paris",
+                    b: "London",
+                    c: "New Delhi",
+                    d: "Ajax"
+                },
+                correctAnswer: "a"
+            },
+            {
+                question: "Which of the following states is not located in the North?",
+                answers: {
+                    a: "Haryana",
+                    b: "Jammu and Kashmir",
+                    c: "Himachal Pradesh",
+                    d: "Jharkhand"
+                },
+                correctAnswer: "d"
+            },
+            {
+                question: "Which state has the largest area?",
+                answers: {
+                    a: "Uttar Pradesh",
+                    b: "Gujrat",
+                    c: "Rajasthan",
+                    d: "West Bengal"
+                },
+                correctAnswer: "c"
+            }
+        ]
+
+        function buildQuiz() {
+            const output = []
+
+            myQuestions.forEach((question, questionNumber) => {
+                const answers = []
+
+                for (const option in question.answers) {
+                    answers.push(
+`<label>
+    <input type="radio" name="question${questionNumber}" value="${option}">${option}: ${question.answers[option]}
+</label>
+`
+                    )
+                }
+
+                output.push(
+`
+<div class='question'>
+    ${questionNumber+1}. ${question.question}
+</div>
+<div class='answer'>
+${answers.join('')}
+</div> <br>
+`
+)
+            })
+
+            // console.log(output[0])
+            // console.log(output.join(''))
+            // console.log(quizContainer)
+            quizContainer.innerHTML = output.join('')
+        }
+
+        function showResults() {
+            const answerContainers = document.querySelectorAll('.answer')
+            let numCorrect = 0
+
+            myQuestions.forEach((question, quesNo) => {
+                const answerContainer = answerContainers[quesNo]
+                const userAnswer = (answerContainer.querySelector(`input[name=question${quesNo}]:checked`) || {}).value 
+
+                if (userAnswer === question.correctAnswer) {
+                    numCorrect++
+                    answerContainers[quesNo].style.color = 'green'
+                } else {
+                    answerContainers[quesNo].style.color = 'red'
+                }
+            })
+
+            resultContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`
+        }
+
+        buildQuiz()
+        submitButton.addEventListener('click', showResults)
+
+    </script>
+</body>
+
+</html>
